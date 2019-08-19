@@ -22,17 +22,17 @@ public class Hook extends BaseUtil{
     public void InitializeTest(Scenario scenario) {
 
 
-        scenarioDef = base.features.createNode(scenario.getName());
+   scenarioDef = base.features.createNode(scenario.getName());
 
         System.out.println("Opening the browser : Firefox");
 
-        /*System.setProperty("webdriver.firefox.marionette", "D:\\Libs\\geckodriver.exe");
-        base.Driver = new FirefoxDriver();*/
+        System.setProperty("webdriver.firefox.marionette", "D:\\Libs\\geckodriver.exe");
+        base.Driver = new FirefoxDriver();
 
 
         //Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
-        WebDrive driver = new ChromeDriver();
+        /*System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver");
+        base.Driver = new ChromeDriver();*/
     }
 
 
